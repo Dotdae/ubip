@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <form class="max-w-sm mx-auto">
+      <h1 class="text-center text-6xl text-gray-900 mb-16">UBIP</h1>
+      <div class="mb-5">
+        <input
+          type="text"
+          id="ip"
+          class="bg-gray-100 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+          placeholder="Escribe la IP a buscar..."
+          required
+        />
+      </div>
+      <div class="container px-10 mx-0 min-w-full flex flex-col items-center">
+        <button
+          type="button"
+          class="bg-blue-700 text-white hover:bg-blue-400 font-bold py-2 px-4 mt-3 rounded"
+          onclick="searchIP()"
+        >
+          Buscar
+        </button>
+      </div>
+    </form>
+    <div id="dataContainer" class="flex flex-row mt-16 justify-center items-center">
+      <table class="text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <tbody>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th scope="row"class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">IP</th>
+            <td class="px-6 py-4" id="ipFind"></td>
+          </tr>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th scope="row"class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Ciudad</th>
+            <td class="px-6 py-4" id="cityFind"></td>
+          </tr>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th scope="row"class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Estado</th>
+            <td class="px-6 py-4" id="stateFind"></td>
+          </tr>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th scope="row"class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">País</th>
+            <td class="px-6 py-4" id="countryFind"></td>
+          </tr>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th scope="row"class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Código Postal</th>
+            <td class="px-6 py-4" id="postalFind"></td>
+          </tr>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th scope="row"class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Latitud</th>
+            <td class="px-6 py-4" id="latFind"></td>
+          </tr>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th scope="row"class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Longitud</th>
+            <td class="px-6 py-4" id="longFind"></td>
+          </tr>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th scope="row"class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Zona horaria</th>
+            <td class="px-6 py-4" id="timeFind"></td>
+          </tr>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th scope="row"class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Lada</th>
+            <td class="px-6 py-4" id="ladaFind"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
